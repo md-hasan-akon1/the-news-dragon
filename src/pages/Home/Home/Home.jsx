@@ -8,7 +8,7 @@ import NewsCard from '../NewsCard/NewsCard';
 const Home = () => {
     const [allData,setAllData]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/news')
+        fetch('https://the-dragon-news-server-md-hasan-akon1.vercel.app/news')
         .then(res=>res.json())
         .then(data=>setAllData(data))
         .catch(error=>console.log(error))
